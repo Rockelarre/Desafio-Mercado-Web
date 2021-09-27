@@ -1,0 +1,17 @@
+<link rel="stylesheet" href="/css/bootstrap.min.css">
+
+
+<div class='container-fluid d-flex justify-content-center'>
+    <div class='col-sm'>
+        {{> Menu}}
+        {{> MensajeBienvenida}}
+        {{!-- {{> Producto}} --}}
+
+        {{#each productos }}
+            <p>{{this}}</p>
+        {{/each}}
+
+        {{> Producto }}
+        {{!-- {{> Producto }} --}}
+    </div>
+</div>
